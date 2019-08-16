@@ -5,4 +5,4 @@ Currently, the whole program can only extract Field-Effect Mobility and on-off r
 
 ## How to use? 
 
-Open dist->open Run->Find Run.exe. Double click and follow the instructions. It should be noticed that the finals results is automatically stored in the root where Run.exe is. 
+Open dist->open Run->Find Run.exe. Double click and follow the instructions. It should be noticed that the finals results is automatically stored in the root you defined. 
