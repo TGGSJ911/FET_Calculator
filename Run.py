@@ -2,6 +2,9 @@ from FET_Calculator import Calculator as Calculator
 import pandas as pd
 import os
 
+# add semiconductor type
+# add the calculation for each circle
+
 
 def run(datapath, widthpath, outputpath, period, skiprow, thickness):
 
@@ -11,7 +14,7 @@ def run(datapath, widthpath, outputpath, period, skiprow, thickness):
     widthpath = widthpath
     outputpath = outputpath
 
-    width = pd.read_csv('{}'.format(widthpath)).values
+    width = pd.read_csv('{}'.format(widthpath), header=None).values
     length = 4
     test = Calculator(period, skiprow, width, length, thickness)
     mobility, on_off_ratio = test.fileReader(datapath, outputpath)

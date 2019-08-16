@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['Run.py'],
-             pathex=['D:\\Onedrive_Purdue\\OneDrive - purdue.edu\\Research file\\FET_Calculator'],
+             pathex=['D:\\Onedrive_Purdue\\OneDrive - purdue.edu\\Research file\\FET_CAL'],
              binaries=[],
              datas=[],
              hiddenimports=[],

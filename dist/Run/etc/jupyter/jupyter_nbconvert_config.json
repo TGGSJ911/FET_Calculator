@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "Exporter": {
+    "template_path": [
+      ".",
+      "c:\\users\\gsj\\anaconda3\\envs\\sg_py3_win\\lib\\site-packages\\jupyter_contrib_nbextensions\\templates"
+    ],
+    "preprocessors": [
+      "jupyter_contrib_nbextensions.nbconvert_support.CodeFoldingPreprocessor",
+      "jupyter_contrib_nbextensions.nbconvert_support.PyMarkdownPreprocessor"
+    ]
+  }
+}
