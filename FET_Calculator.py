@@ -98,7 +98,7 @@ class Calculator:
 
     def getslope(self, Ids, Vg):
         slopeCollection = []
-        for i in range(1, len(Ids)-1):
+        for i in range(1, len(Ids)):
             try:
                 slope = (Ids[i-1]-Ids[i])/(Vg[i]-Vg[i-1])
                 slopeCollection.append(slope)
