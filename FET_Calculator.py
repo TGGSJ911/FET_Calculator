@@ -53,10 +53,7 @@ class Calculator:
                 temp_on_off_ratio = max(
                     temp_on_off_ratio, abs(on_current/off_current))
                 mu.append(tempMu)
-            if temp_on_off_ratio < 1e5:
                 on_off_ratio.append(temp_on_off_ratio)
-            else:
-                on_off_ratio.append(0)
         mu_df = pd.DataFrame({'device': self.csv, 'Mobility': mu})
         onOff_df = pd.DataFrame(
             {'device': self.csv, 'On-off-Ratio': on_off_ratio[:]})
@@ -119,7 +116,7 @@ class Calculator:
             Vg_monotone.append(
                 VgIds.loc[VgIds['Ids'] == current, 'Vg'].iloc[0])
         Vg = Vg_monotone
-        mu = self.getslope(Ids, Vg)*L/(Cox*W*Vds).values[0]*1e3
+        mu = self.getslope(Ids, Vg)*L/(Cox*W*Vds).values[0]*1e4
         return mu
 
     def IVPlot(self, data, scale, title):
